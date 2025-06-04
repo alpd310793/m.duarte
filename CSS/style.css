@@ -1,0 +1,180 @@
+/* === RESETEO BÁSICO === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* === GENERAL === */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #222;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* === ENCABEZADO === */
+  header {
+    background-color: #002b5c; /* azul de Nacional */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* === MENÚ DE NAVEGACIÓN === */
+  /* Estilo del nav */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;            /* pone los <li> en línea */
+    justify-content: center;  /* centra los elementos */
+    gap: 20px;                /* espacio entre botones */
+  }
+  
+  /* Estilo de cada item del menú */
+  nav li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d71a28;  /* rojo de Nacional */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Efecto al pasar el mouse */
+  nav li a:hover {
+    background-color: white;
+    color: #002b5c;
+  }
+  
+  
+  /* === CONTENIDO PRINCIPAL === */
+  main {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Imagen destacada */
+  .portada {
+    max-width: 30%;
+    height: auto;
+    border: 3px solid #002b5c;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  /* === SECCIONES DE CONTENIDO === */
+  section {
+    margin: 40px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  section h2 {
+    color: #002b5c;
+    margin-bottom: 10px;
+  }
+  
+  section ul, section ol {
+    text-align: left;
+    margin: 10px auto;
+    max-width: 600px;
+  }
+  
+  /* === GALERÍA DE IMÁGENES === */
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f4ff; /* Fondo claro para resaltar imágenes */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .galeria h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #002b5c;
+  }
+  
+  .galeria img {
+    width: 500px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #002b5c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /* === FORMULARIO === */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #002b5c;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #002b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #001c3d;
+  }
+  
+  /* === PIE DE PÁGINA === */
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 15px;
+    background-color: #002b5c;
+    color: white;
+    border-radius: 10px;
+  }
+  
